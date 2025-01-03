@@ -1,4 +1,5 @@
 package com.example.foodgram.uiStates
 
-class FormUIState {
-}
+data class FormUIState(
+    val buttonEnabled: Boolean = false
+)
