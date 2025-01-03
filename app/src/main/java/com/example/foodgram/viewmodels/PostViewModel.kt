@@ -52,11 +52,11 @@ class PostViewModel(
         return _selectedPost.value
     }
 
-//    var createPostStatus: CreatePostStatusUIState by mutableStateOf(CreatePostStatusUIState.Start)
-//        private set
-//
-//    var postDetailStatus: PostDetailDataStatusUI by mutableStateOf(PostDetailDataStatusUI.Start)
-//        private set
+    var createPostStatus: CreatePostStatusUIState by mutableStateOf(CreatePostStatusUIState.Start)
+        private set
+
+    var postDetailStatus: PostDetailDataStatusUI by mutableStateOf(PostDetailDataStatusUI.Start)
+        private set
 
     var titleInput by mutableStateOf("")
         private set
