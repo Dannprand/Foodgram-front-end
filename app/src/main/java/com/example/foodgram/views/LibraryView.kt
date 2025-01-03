@@ -42,7 +42,16 @@ fun LibraryView(
                     }
                 }
 
+                items(TagModel.Tags) { tag ->
+                    TagImage(
+                        tag = tag,
+                        cornerRadius = 10.dp
+                    ) {
+                        libraryViewModel.changeSelectedTagID(tagID = tag.tagId)
 
+                        navController.navigate(PagesEnum.LibraryDetail.name)
+                    }
+                }
             }
         )
     }
