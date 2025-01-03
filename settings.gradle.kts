@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "foodgram"
+rootProject.name = "FoodGram"
 include(":app")
  
