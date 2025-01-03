@@ -99,7 +99,20 @@ fun LibraryDetailView(
                         )
                     }
                 }
-
+            else ->
+                item {
+                    Column(
+                        modifier = Modifier
+                            .fillMaxSize(),
+                        horizontalAlignment = Alignment.CenterHorizontally,
+                        verticalArrangement = Arrangement.Center
+                    ) {
+                        CircleLoadingTemplate(
+                            color = Orange80,
+                            trackColor = Color.Transparent,
+                        )
+                    }
+                }
         }
     }
 }
