@@ -233,16 +233,6 @@ class HomeViewModel(
         }
     }
 
-    fun toogleRatePost(postId: Int, rateValue: Int?, isRated: Boolean){
-        if(isRated){
-            unratingPost(postId)
-        } else {
-            if (rateValue != null) {
-                ratingPost(postId, rateValue)
-            }
-        }
-    }
-
     fun ratingPost(postId: Int, rateValue: Int){
         viewModelScope.launch {
             ratingStatusUIState = RateStatusUIState.Loading

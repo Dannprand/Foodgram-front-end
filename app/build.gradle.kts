@@ -1,4 +1,3 @@
-import kotlinx.android.parcel.Parcelize
 
 plugins {
     alias(libs.plugins.androidApplication)
@@ -53,7 +52,6 @@ android {
 }
 
 dependencies {
-
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
